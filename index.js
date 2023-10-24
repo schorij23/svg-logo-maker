@@ -41,7 +41,7 @@ function svgInfoPrompt() {
     let shapeChoice = createShape(shape, shapeColor);
     // Check if a shape was created
     if (shapeChoice) {
-        // Set the color
+        // Set the color and text
         shapeChoice.setShapeColor(shapeColor);
         shapeChoice.setTextColor(textColor);
         shapeChoice.setText(text);
