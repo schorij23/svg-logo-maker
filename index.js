@@ -9,7 +9,7 @@ function svgInfoPrompt() {
         {
           type: 'input',
           name: 'textColor',
-          message: 'Enter the Text Color(regular colors like blue, red, purple etc...)',
+          message: 'Enter the Text Color',
         },
         {
           type: 'list',
@@ -20,11 +20,11 @@ function svgInfoPrompt() {
         {
           type: 'input',
           name: 'shapeColor',
-          message: 'Enter the shape color (regular colors like blue, red, purple etc...)',
+          message: 'Enter the shape color',
         },
         {
           type: 'imput',
-          name: 'text',
+          name: 'textInput',
           message: 'Enter text to add to the logo'
         }
       ]);
@@ -33,44 +33,36 @@ function svgInfoPrompt() {
   async function main() {
     // Prompt for SVG info wait for svgInfoPrompt()
     const svgInfo = await svgInfoPrompt();
-    // Get shape and shape color fro svgInfo
-    const { textColor, shape, shapeColor, text } = svgInfo;
+    // Destructuring to get info from svgInfo
+    const { textColor, shape, shapeColor, textInput } = svgInfo;
     // set file name for SVG info
-    const fileName = 'logo.svg';
+    const fileName = 'logonewer.svg';
     // Create a shape and set the color
-    let shapeChoice = createShape(shape, shapeColor);
-    // Check if a shape was created
-    if (shapeChoice) {
-        // Set the color and text
-        shapeChoice.setShapeColor(shapeColor);
-        shapeChoice.setTextColor(textColor);
-        shapeChoice.setText(text);
+    let fontSize = 60;
+    let textX = 90;
+    let textY = 155;
+    if(shape === "triangle") {
+      shapeChoice = new Triangle(shapeColor)
+    } else if (shape === "circle") {
+      shapeChoice = new Circle(shapeColor)
+      textX = 65;
+      textY = 150;
+    }  else {
+      shapeChoice = new Square(shapeColor)
+      fontSize = 60;
+      textX = 60;
+      textY = 115;
+    } 
         //Renders the shape to SVG content
-      const svgContent = shapeChoice.render();
+      const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+      ${shapeChoice.render()}
+      <text x="${textX}" y="${textY}" fill='${textColor}' font-size='${fontSize}'>${textInput}</text>
+      </svg>`;
+      
       //Write the SVG content to file by filename
       svgWriteFile(svgContent, fileName);
-    } else {
-      // if the shape was not created log error
-      console.log('Invalid shape');
-    }
   }
-  // Function to make and returns an instance of a shape object based on the prompt
-  function createShape(shape, shapeColor) {
-    const shapeTypes = {
-      circle: Circle,
-      triangle: Triangle,
-      square: Square,
-    };
-    // This checks to make sure the shape exists in the shapeTypes object
-    const ShapeType = shapeTypes[shape];
-     // This makes a new instance of the shape and the color
-    if (ShapeType) {
-      return new ShapeType(shapeColor);
-    } else {
-      // if the shape is not circle,square or triangle return null
-      return null;
-    }
-  }
+  
   
   // Function to write SVG file
 function svgWriteFile (svgContent, fileName) {
