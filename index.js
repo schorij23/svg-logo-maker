@@ -2,9 +2,9 @@ const fs = require('fs');
 const inquirer = require ('inquirer');
 const {Triangle, Square, Circle} = require("./lib/shapes");
 
-// Function to prompt for SVG info
+// Function to prompt user for SVG info
 function svgInfoPrompt() {
-    // This uses the inquirer library to prompt the user to input data
+    // Prompt for color, shape and text
     return inquirer.prompt([
         {
           type: 'input',
@@ -36,11 +36,13 @@ function svgInfoPrompt() {
     // Destructuring to get info from svgInfo
     const { textColor, shape, shapeColor, textInput } = svgInfo;
     // set file name for SVG info
-    const fileName = 'logonewer.svg';
-    // Create a shape and set the color
+    const fileName = 'logo.svg';
+    // Set default fontsize
     let fontSize = 60;
+    // Set default text positioning
     let textX = 90;
     let textY = 155;
+    // Set Changes based on the shape choosen
     if(shape === "triangle") {
       shapeChoice = new Triangle(shapeColor)
     } else if (shape === "circle") {
@@ -53,7 +55,7 @@ function svgInfoPrompt() {
       textX = 60;
       textY = 115;
     } 
-        //Renders the shape to SVG content
+      //Renders the shape to SVG content
       const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
       ${shapeChoice.render()}
       <text x="${textX}" y="${textY}" fill='${textColor}' font-size='${fontSize}'>${textInput}</text>
