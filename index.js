@@ -9,7 +9,7 @@ function svgInfoPrompt() {
         {
           type: 'input',
           name: 'textColor',
-          message: 'Enter the Text Color',
+          message: 'Enter the Text Color keyword (Or hexadecimal number',
         },
         {
           type: 'list',
@@ -20,7 +20,7 @@ function svgInfoPrompt() {
         {
           type: 'input',
           name: 'shapeColor',
-          message: 'Enter the shape color',
+          message: 'Enter the shape color keyword (Or hexadecimal number',
         },
         {
           type: 'imput',
