@@ -73,17 +73,17 @@ Tests run on this application use [jess](https://www.npmjs.com/package/jess)
 ## Screenshots
 <div style="display: flex;">
   <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-    <circle cx="125" cy="125" r="75" fill="green" />
-    <text x="125" y="150" fill='white' font-size='60' text-anchor='middle'>SVG</text>
-  </svg>
+      <circle cx="125" cy="125" r="75" fill="green" />
+      <text x="65" y="150" fill='white' font-size='60'>SVG</text>
+      </svg>
   <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-    <rect x="40" y="20" width="160" height="160" fill="red" />
-    <text x="120" y="115" fill='white' font-size='60' text-anchor='middle'>SVG</text>
-  </svg>
+      <rect x="40" y="20" width="160" height="160" fill="red" />
+      <text x="60" y="115" fill='white' font-size='60'>SVG</text>
+      </svg>
   <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-    <polygon points="150, 18 244, 182 56, 182" fill="blue" />
-    <text x="150" y="155" fill='yellow' font-size='60' text-anchor='middle'>SVG</text>
-  </svg>
+      <polygon points="150, 18 244, 182 56, 182" fill="blue" />
+      <text x="90" y="155" fill='yellow' font-size='60'>SVG</text>
+      </svg>
 </div>
 
 
