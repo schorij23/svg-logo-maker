@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
     <circle cx="125" cy="125" r="75" fill="green" />
-    <text x="65" y="150" fill='White' font-size='60'>SVG</text>
+    <text x="65" y="150" fill='white' font-size='60'>SVG</text>
     </svg>
