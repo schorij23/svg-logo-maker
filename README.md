@@ -73,7 +73,7 @@ https://github.com/schorij23/svg-logo-maker/assets/5600528/dd79b7ef-02d0-4cb2-80
 
 
 ## Screenshots
-There are 3 logos in the examples folder
+There are 3 logos in the examples folder <br>
 SVG LOGO
 ![README md - svg-logo-maker - Visual Studio Code 10_31_2023 4_45_47 PM](https://github.com/schorij23/svg-logo-maker/assets/5600528/a2de1a0e-57e7-4e26-bf86-f3f76a71ef4d)
 Test
