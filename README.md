@@ -70,9 +70,15 @@ Tests run on this application use [jess](https://www.npmjs.com/package/jess)
 ## Walkthrough
 
 
+https://github.com/schorij23/svg-logo-maker/assets/5600528/dd79b7ef-02d0-4cb2-805e-fa46c6140fc5
+
+
 ## Screenshots
+SVG LOGO
 ![README md - svg-logo-maker - Visual Studio Code 10_31_2023 4_45_47 PM](https://github.com/schorij23/svg-logo-maker/assets/5600528/a2de1a0e-57e7-4e26-bf86-f3f76a71ef4d)
+Test
 ![README md - svg-logo-maker - Visual Studio Code 10_31_2023 4_45_21 PM](https://github.com/schorij23/svg-logo-maker/assets/5600528/00828689-6245-419f-9ec3-7efb26e99dbf)
+SVG LOGO
 ![Mozilla Firefox 10_31_2023 4_46_02 PM](https://github.com/schorij23/svg-logo-maker/assets/5600528/679bdef2-778e-4cdb-ad01-e56569ac86d5)
 
 
