@@ -56,7 +56,7 @@ The project is licensed by the MIT License.
 For more details, see [License Details](https://choosealicense.com/licenses/mit/)
 
 ## Testing
-Tests run on this application use [jess](https://www.npmjs.com/package/jess)
+Tests run on this application using [jess](https://www.npmjs.com/package/jess)
 <img src="./images/Testing Screenshot.png">
 
 ## Questions
