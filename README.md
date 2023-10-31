@@ -1,4 +1,3 @@
-![logoTriangle](https://github.com/schorij23/svg-logo-maker/assets/5600528/1834702e-d651-4ba4-a99b-8f5f7d4a3d8b)![logoSquare](https://github.com/schorij23/svg-logo-maker/assets/5600528/7ad512bc-c451-4c23-a9af-5c91563183b9)
 # SVG Logo Maker
 
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
