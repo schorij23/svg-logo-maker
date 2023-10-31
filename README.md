@@ -1,4 +1,4 @@
-
+![logoTriangle](https://github.com/schorij23/svg-logo-maker/assets/5600528/1834702e-d651-4ba4-a99b-8f5f7d4a3d8b)![logoSquare](https://github.com/schorij23/svg-logo-maker/assets/5600528/7ad512bc-c451-4c23-a9af-5c91563183b9)
 # SVG Logo Maker
 
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -80,6 +80,15 @@ Test
 ![README md - svg-logo-maker - Visual Studio Code 10_31_2023 4_45_21 PM](https://github.com/schorij23/svg-logo-maker/assets/5600528/00828689-6245-419f-9ec3-7efb26e99dbf)
 SVG LOGO
 ![Mozilla Firefox 10_31_2023 4_46_02 PM](https://github.com/schorij23/svg-logo-maker/assets/5600528/679bdef2-778e-4cdb-ad01-e56569ac86d5)
+![Uploading logoSquar<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+      <rect x="40" y="20" width="160" height="160" fill="red" />
+      <text x="60" y="115" fill='white' font-size='60'>SVG</text>
+      </svg>e.svg…]()
+      !<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+      <polygon points="150, 18 244, 182 56, 182" fill="blue" />
+      <text x="90" y="155" fill='yellow' font-size='60'>SVG</text>
+      </svg>[Uploading logoTriangle.svg…]()
+
 
 
 
