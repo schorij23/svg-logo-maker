@@ -25,7 +25,7 @@ const {Triangle, Square, Circle} = require("./lib/shapes");
         {
           type: 'imput',
           name: 'textInput',
-          message: 'Enter text to add to the logo',
+          message: 'Enter up to three characters to add to the logo',
           validate: function (text) {
             if (text.length > 3) {
               return 'Text can only have 3 digits';
